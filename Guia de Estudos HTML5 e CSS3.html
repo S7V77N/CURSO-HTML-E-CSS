@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheat Sheet HTML5 + CSS</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #222;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      main {
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+      h2 {
+        margin-top: 40px;
+        color: #333;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background: #333;
+        color: #fff;
+      }
+      tr:nth-child(even) {
+        background: #f9f9f9;
+      }
+      .tag {
+        font-weight: bold;
+        color: #0056b3;
+      }
+      .property {
+        font-weight: bold;
+        color: #b30000;
+      }
+      #search {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .hidden {
+        display: none;
+      }
+      .info {
+        background: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>GUIA DE ESTUDOS</h1>
+      <h1>HTML5 E CSS3</h1>
+      <input
+        type="text"
+        id="search"
+        placeholder="Pesquisar tag ou propriedade..."
+      />
+    </header>
+    <main>
+      <div class="info">
+        <h2>O que é HTML5 e CSS?</h2>
+        <p>
+          <strong>HTML5</strong> é a versão mais recente da linguagem de
+          marcação usada para estruturar o conteúdo da web, como textos,
+          imagens, links, vídeos e formulários.
+        </p>
+        <p>
+          <strong>CSS (Cascading Style Sheets)</strong> é usado para definir o
+          estilo visual de páginas HTML, controlando cores, tamanhos, layouts e
+          até animações.
+        </p>
+        <h3>O que é uma tag?</h3>
+        <p>
+          Uma <strong>tag</strong> é um elemento do HTML que indica como um
+          conteúdo deve ser exibido ou estruturado. Por exemplo,
+          <code>&lt;p&gt;</code> define um parágrafo e
+          <code>&lt;img&gt;</code> exibe uma imagem.
+        </p>
+        <h3>Como funcionam classes e IDs?</h3>
+        <ul>
+          <li>
+            <strong>Classes (class)</strong>: Permitem aplicar o mesmo estilo a
+            múltiplos elementos. Exemplo:
+            <code>&lt;div class="caixa"&gt;&lt;/div&gt;</code> e no CSS
+            <code>.caixa { color: red; }</code>.
+          </li>
+          <li>
+            <strong>IDs (id)</strong>: Identificam um elemento único na página.
+            Exemplo: <code>&lt;div id="principal"&gt;&lt;/div&gt;</code> e no
+            CSS <code>#principal { background: blue; }</code>.
+          </li>
+        </ul>
+      </div>
+
+      <h2>Tags HTML5 (Incluindo Raras)</h2>
+      <table id="html-table">
+        <tr>
+          <th>Tag</th>
+          <th>Função</th>
+        </tr>
+        <tr>
+          <td class="tag">&lt;!DOCTYPE html&gt;</td>
+          <td>Define o documento como HTML5</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;html&gt;</td>
+          <td>Raiz do documento</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;head&gt;</td>
+          <td>Metadados do site</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;title&gt;</td>
+          <td>Título da página</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;meta&gt;</td>
+          <td>Informações adicionais</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;base&gt;</td>
+          <td>Define URL base</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;link&gt;</td>
+          <td>Importa arquivos externos</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;style&gt;</td>
+          <td>CSS interno</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;script&gt;</td>
+          <td>Scripts JS</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;noscript&gt;</td>
+          <td>Conteúdo sem JS</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;header&gt;</td>
+          <td>Cabeçalho da página</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;nav&gt;</td>
+          <td>Navegação</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;main&gt;</td>
+          <td>Conteúdo principal</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;section&gt;</td>
+          <td>Seção temática</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;article&gt;</td>
+          <td>Conteúdo independente</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;aside&gt;</td>
+          <td>Conteúdo lateral</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;footer&gt;</td>
+          <td>Rodapé</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;address&gt;</td>
+          <td>Informações de contato</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;h1&gt;-&lt;h6&gt;</td>
+          <td>Títulos de diferentes níveis</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;p&gt;</td>
+          <td>Parágrafo</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;br&gt;</td>
+          <td>Quebra de linha</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;hr&gt;</td>
+          <td>Linha horizontal</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;strong&gt;</td>
+          <td>Ênfase importante</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;em&gt;</td>
+          <td>Ênfase suave</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;mark&gt;</td>
+          <td>Texto destacado</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;small&gt;</td>
+          <td>Texto menor</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;sup&gt;/&lt;sub&gt;</td>
+          <td>Texto sobrescrito/subscrito</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;blockquote&gt;</td>
+          <td>Citação em bloco</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;cite&gt;</td>
+          <td>Fonte de citação</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;code&gt;</td>
+          <td>Trecho de código</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;pre&gt;</td>
+          <td>Texto pré-formatado</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;abbr&gt;</td>
+          <td>Abreviação</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;data&gt;</td>
+          <td>Valor legível por máquina</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;time&gt;</td>
+          <td>Data/Hora</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;wbr&gt;</td>
+          <td>Quebra opcional de linha</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;ul&gt;/&lt;ol&gt;/&lt;li&gt;</td>
+          <td>Listas</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;dl&gt;/&lt;dt&gt;/&lt;dd&gt;</td>
+          <td>Lista de descrição</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;a&gt;</td>
+          <td>Link</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;img&gt;</td>
+          <td>Imagem</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;figure&gt;/&lt;figcaption&gt;</td>
+          <td>Imagem com legenda</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;audio&gt;/&lt;video&gt;</td>
+          <td>Mídia</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;track&gt;/&lt;source&gt;</td>
+          <td>Fontes de mídia</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;iframe&gt;</td>
+          <td>Conteúdo externo</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;canvas&gt;</td>
+          <td>Gráficos desenhados via JS</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;svg&gt;</td>
+          <td>Gráficos vetoriais</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;map&gt;/&lt;area&gt;</td>
+          <td>Mapa de imagem</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;table&gt;/&lt;tr&gt;/&lt;td&gt;/&lt;th&gt;</td>
+          <td>Tabelas</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;thead&gt;/&lt;tbody&gt;/&lt;tfoot&gt;</td>
+          <td>Seções da tabela</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;col&gt;/&lt;colgroup&gt;</td>
+          <td>Configuração de colunas</td>
+        </tr>
+        <tr>
+          <td class="tag">
+            &lt;form&gt;/&lt;input&gt;/&lt;textarea&gt;/&lt;button&gt;
+          </td>
+          <td>Formulários</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;select&gt;/&lt;option&gt;/&lt;optgroup&gt;</td>
+          <td>Listas suspensas</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;label&gt;</td>
+          <td>Rótulo do formulário</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;fieldset&gt;/&lt;legend&gt;</td>
+          <td>Agrupamento de campos</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;datalist&gt;</td>
+          <td>Sugestões de entrada</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;output&gt;</td>
+          <td>Resultado calculado</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;progress&gt;/&lt;meter&gt;</td>
+          <td>Indicadores visuais</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;details&gt;/&lt;summary&gt;</td>
+          <td>Seção expandível</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;dialog&gt;</td>
+          <td>Caixa de diálogo</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;template&gt;/&lt;slot&gt;</td>
+          <td>Conteúdo dinâmico (Web Components)</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;menu&gt;/&lt;menuitem&gt;</td>
+          <td>Menus contextuais (raro)</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;shadow&gt;</td>
+          <td>Parte antiga do Shadow DOM (obsoleto)</td>
+        </tr>
+        <tr>
+          <td class="tag">&lt;rb&gt;/&lt;rt&gt;/&lt;rp&gt;/&lt;ruby&gt;</td>
+          <td>Anotações de texto oriental</td>
+        </tr>
+      </table>
+
+      <h2>Propriedades CSS (Comuns + Raras)</h2>
+      <table id="css-table">
+        <tr>
+          <th>Propriedade</th>
+          <th>Função</th>
+        </tr>
+        <tr>
+          <td class="property">color</td>
+          <td>Cor do texto</td>
+        </tr>
+        <tr>
+          <td class="property">background</td>
+          <td>Plano de fundo completo</td>
+        </tr>
+        <tr>
+          <td class="property">border</td>
+          <td>Borda completa</td>
+        </tr>
+        <tr>
+          <td class="property">margin / padding</td>
+          <td>Espaçamento externo/interno</td>
+        </tr>
+        <tr>
+          <td class="property">display</td>
+          <td>Tipo de exibição (block, flex...)</td>
+        </tr>
+        <tr>
+          <td class="property">position</td>
+          <td>Posicionamento (relative, absolute...)</td>
+        </tr>
+        <tr>
+          <td class="property">z-index</td>
+          <td>Camada</td>
+        </tr>
+        <tr>
+          <td class="property">flex / grid</td>
+          <td>Layouts modernos</td>
+        </tr>
+        <tr>
+          <td class="property">gap</td>
+          <td>Espaço entre itens</td>
+        </tr>
+        <tr>
+          <td class="property">box-shadow / text-shadow</td>
+          <td>Sombras</td>
+        </tr>
+        <tr>
+          <td class="property">opacity</td>
+          <td>Transparência</td>
+        </tr>
+        <tr>
+          <td class="property">filter / backdrop-filter</td>
+          <td>Efeitos visuais</td>
+        </tr>
+        <tr>
+          <td class="property">clip-path</td>
+          <td>Formas recortadas</td>
+        </tr>
+        <tr>
+          <td class="property">transition / transform</td>
+          <td>Animações simples</td>
+        </tr>
+        <tr>
+          <td class="property">animation / @keyframes</td>
+          <td>Animações avançadas</td>
+        </tr>
+        <tr>
+          <td class="property">@media / @supports</td>
+          <td>Responsividade e verificação</td>
+        </tr>
+        <tr>
+          <td class="property">cursor</td>
+          <td>Tipo de cursor</td>
+        </tr>
+        <tr>
+          <td class="property">content</td>
+          <td>Adiciona conteúdo via pseudo-elementos</td>
+        </tr>
+      </table>
+    </main>
+    <script>
+      document.getElementById("search").addEventListener("input", function () {
+        let filter = this.value.toLowerCase();
+        document.querySelectorAll("table tr").forEach((row) => {
+          let text = row.innerText.toLowerCase();
+          if (!row.querySelector("th")) {
+            row.classList.toggle("hidden", !text.includes(filter));
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
