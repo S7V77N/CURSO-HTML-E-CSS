@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desafio do Astronauta</title>
+  <style>
+    /* Remove margens padrão e garante altura total */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    /* Container ocupa a tela toda */
+    #container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: url('imagens/espaco.jpg') no-repeat center/cover;
+    }
+
+    /* Astronauta centralizado e responsivo */
+    #conteudo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20%;           /* Tamanho relativo da tela */
+      max-width: 200px;     /* Limite para não ficar muito grande */
+      aspect-ratio: 1/1;    /* Mantém proporção quadrada */
+      background: url('imagens/astronauta.png') no-repeat center/contain;
+    }
+  </style>
+</head>
+<body>
+  <section id="container">
+    <article id="conteudo"></article>
+  </section>
+</body>
+</html>
